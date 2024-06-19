@@ -16,7 +16,7 @@ class LeaderActivity : AppCompatActivity() {
     private val leaderAdapter by lazy { LeaderAdapter() }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        
         binding = ActivityLeaderBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -70,17 +70,16 @@ class LeaderActivity : AppCompatActivity() {
 
     private fun loadData():MutableList<UserModel>{
         val users:MutableList<UserModel> = mutableListOf()
-        users.add(UserModel(1,"Sophia","person1",5))
-        users.add(UserModel(2,"Daniel","person2",2))
-        users.add(UserModel(3,"James","person3",3))
-        users.add(UserModel(4,"John","person4",2))
-        users.add(UserModel(5,"Emily","person5",5))
-        users.add(UserModel(6,"David","person6",1))
-        users.add(UserModel(7,"Sarah","person7",2))
+        users.add(UserModel(1,"Tran","person1",5))
+        users.add(UserModel(2,"Quang","person2",2))
+        users.add(UserModel(3,"Huy","person3",3))
+        users.add(UserModel(4,"Tam","person4",2))
+        users.add(UserModel(5,"Anh","person5",5))
+        users.add(UserModel(6,"Akash","person6",1))
+        users.add(UserModel(7,"Reetu","person7",2))
         users.add(UserModel(8,"Michael","person8",5))
-        users.add(UserModel(9,"Bob","person9",5))
+        users.add(UserModel(9,"Vishal","person9",5))
         users.add(UserModel(10,"Wilson","person10",7))
-
         return users
     }
 
